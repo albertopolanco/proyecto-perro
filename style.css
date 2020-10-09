@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* header y primer section*/
+.navBar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top: 0%;
+    background-color: red;
+    padding: 8px 40px;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: auto;
+
+}
+
+.navBar>ul {
+    list-style: none;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.navBar li{
+    display: inline-flex;
+    padding: 0px 10px;
+    
+ 
+   
+}
+
+.imagenPrincipal {
+    width: 100%;
+    height: 100vh;
+    background: url(./Imagenes/PHOTO-2020-08-05-10-09-24.jpg) no-repeat 50% 50%;
+    background-size: cover;
+ 
+
+}
+
+.imagenSection>h1 {
+    color: #fff;
+    font-size: 85px;
+    position: absolute;
+    left: 50%;
+    top:30%;
+    transform: translate(-50%, -50%);
+}
+
