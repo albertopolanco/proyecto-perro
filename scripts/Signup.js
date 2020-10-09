@@ -97,7 +97,7 @@ addListeners = () => {
 
 const signup = new Signup();
 
-//Cuando termine de cargar, registra todos los eventos
+//Cuando termine de cargar, registra todos los eventos.
 window.addEventListener('load', signup.addListeners);
 
 
