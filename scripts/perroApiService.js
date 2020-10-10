@@ -1,7 +1,7 @@
 // const razasUrl = 'https://api.thedogapi.com/v1/breeds';
 // const imagenesUrl = 'https://dog.ceo/api/breeds/image';
 
-
+'use strict';
 
 async function fetchImagesDogs(raza) {
     const response = await fetch(`https://api.thedogapi.com/v1/breeds/search?name=${raza}`);

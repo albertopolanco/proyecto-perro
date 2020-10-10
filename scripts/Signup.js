@@ -21,15 +21,45 @@ constructo(){
 
 handleEmailInput = (event) => {
     const email = event.target.value;
-    console.log(email)
+
+    validator.validateValidEmail(email);
+
+    const errorsObj = validator.getErrors();
+    
+    if(!errorsObj.invalidEmailError){
+
+        validator.validateUniqueEmail(email)
+    }
+
+    this.setErrorMessages();
+    
 }
 
 handlePasswordInput = (event) => {
     const password = event.target.value;
+
+const repeatedPassword = this.repeatPasswordInput.value;
+
+validator.validatePassword(password);
+validator.validatePasswordRepeat(password);
+
+this.setErrorMessages();
+
+
+
 }
 
 handleRepeatPasswordInput = (event) => {
-    const repeatPassword = event.target.value;
+    const repeatedPassword = event.target.value;
+
+
+
+    const password = this.passwordInput.value;
+
+    validator.validatePasswordRepeat(password, repeatedPassword);
+    validator.validatePassword(password)
+
+this.setErrorMessages();
 }
 
 
@@ -58,6 +88,8 @@ const newUser = new User(name, email, password);
 
 
 // guardar el usuario en la base de datos
+db.saveNewUser( newUser );
+console.log('newuser', newUser)
 /*
 database.createNewUser(newUser)
 */
@@ -68,6 +100,10 @@ this.nameInput.value = '';
 this.emailInput.value = '';
 this.passwordInput.value = '';
 this.repeatPasswordInput.value = '';
+
+
+
+validator.resetValidator();
 }
 
 //metodos para cada uno de los input
@@ -88,6 +124,59 @@ addListeners = () => {
 
 }
 
+setErrorMessages = () => {
+    this.messageWraper.innerHTML = "";
+
+    const errorsObj = validator.getErrors();
+
+    const errorsStringsArr = Object.values(errorsObj);
+
+    errorsStringsArr.forEach( (errorStr) => {
+        const errorMessageP = document.createElement("p");
+        errorMessageP.innerHTML = errorStr;
+        this.messageWraper.appendChild(errorMessageP);
+    });
+}
+
+checkButton = () => {
+    const errorsObj = validator.getErrors();
+    const errorsArr = Object.values(errorsObj);
+
+
+    if(errorsArr.length > 0){
+        this.buttonInput.disabled = true;
+    } else {
+        this.buttonInput.disabled = false;
+    }
+}
+
+
+removeMessages = () => {
+    setTimeout(() => {
+        this.messageWraper.innerHTML = '';
+    }, 2000)
+}
+
+
+showSuccessMessage = () => {
+    this.messageWraper.innerHTML = '';
+    const errorsObj = validator.getErrors();
+    const errorsStringArr = Object.values(errorsObj);
+
+    if(errorsStringArr.length > 0) {
+        return;
+    }
+
+
+    const successMessageP = document.createElement('p');
+    successMessageP.innerHTML = "Se a cerado la cuenta correctamente.";
+
+
+    this.messageWraper.appendChild(successMessageP);
+
+
+
+}
 
 
 
