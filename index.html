@@ -6,34 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Equipo guau</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 
   </head>
   <body>
-    <header>
-      <nav class="navBar">  
-        <img class="logo" src="./Imagenes/logoperro.jpg" alt="logo perro"/>
-          <ul class="navBar-ul">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="#App page">App page</a></li>
-            <li><a href="#FAQ">FAQ</a></li>
-            <li><a href="./signup.html">Sign Up</a></li>
-            <li><a href="./login.html">Log In</a></li>
-          </ul>
-        </nav>   
-    </header>
+ 
     <section>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="./Imagenes/imagen1.jpeg" alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="./Imagenes/foto2.jpg" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="./Imagenes/foto3.jpeg" alt="Third slide">
-      </div>
-    </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="./Imagenes/slide1.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./Imagenes/slide2.jpeg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./Imagenes/slide3.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
   </section>
+  <header>
+    <nav class="navBar">  
+      <img class="logo" src="./Imagenes/logoperro.jpg" alt="logo perro"/>
+        <ul class="navBar-ul">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#App page">App page</a></li>
+          <li><a href="./dashboard.html">FAQ</a></li>
+          <li><a href="./signup.html">Sign Up</a></li>
+          <li><a href="./login.html">Log In</a></li>
+        </ul>
+      </nav>   
+  </header>
     <!-- <section class="imagenSection">
       <div class="imagenPrincipal"></div>
       <h1 class="imagenSection>h1">Conoces todas las razas</h1>
@@ -41,29 +64,45 @@
 
      <main>
 
-    <section class="app-info">
+    <section class="home-info">
       <div class="app-description">
 
-        <h2>Pokémon GO</h2>
+        <h2 class="h2">¿Como surgieron las razas de perros?</h2>
 
-        <article>
-          <h4>Lorem Ipsum</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </article>
-
-        <article>
-          <h4>Lorem Ipsum</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </article>
-
-        <article>
-          <h4>Lorem Ipsum</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </article>
+        <p>
+          Al hablar sobre la historia, origen y evolución del perro, cabe preguntarse: ¿cómo se crearon los perros? Es decir, ¿cómo surgieron las más de 400 razas que existen actualmente? Las razas de perros se iniciaron con el basenji, la variedad más antigua del mundo. A partir de él se desarrollarían más de 100 razas actuales y, en gran parte, esto respondería al contacto que tuvieron con el humano, además de la selección natural.
+         </p>
+         <P>
+          En cada población humana, los perros comenzaron a cumplir tareas diferentes, por lo que ejercían de perros guardianes, cazadores, sabuesos, animales de compañía, recolectores de presas acuáticas, entre otras. Estas actividades requerían del desarrollo de habilidades específicas. A raíz de esto, los seres humanos ponían especial énfasis en la cría de perros que cumplieran con las características que les resultaban útiles. De esta forma, ciertas particularidades se fueron afianzando hasta derivar en el establecimiento de las diferentes razas.
+         </P>
+         <P>
+          Además, a partir del siglo XIX comenzó a aplicarse la eugenesia en el cría de perros, que no es otra cosa que la aplicación de los estudios sobre la herencia para el perfeccionamiento de ciertas características. En los últimos años, esta disciplina ha sido utilizada para obtener ciertas particularidades estéticas en las razas caninas, incluso en detrimento de la salud de los perros resultantes.
+         </P>
+         <P>
+          Contrario a lo que se cree, los perros mestizos no serían el resultado del cruce indiscriminado entre canes de distinta raza. En realidad, se trata de perros que se han desarrollado a partir de la selección natural, es decir, sin que intervenga la mano del humano para crear características específicas. Gracias a esto, los perros mestizos suelen ser más saludables que las variedades de raza, pues raras veces sufren de dolencias congénitas o hereditarias.
+         </P>
 
       </div>
+    </section>
 
-      <div class="app-icon">
+      <footer class="background-footer">
+        <section class="footer a">
+          <h5>Follow Us</h5><br>
+          <a href="https://twitter.com/?lang=es" title="Twitter">
+            <img src="./Imagenes/twitter.png" alt="Enlace a twitter" />
+          </a><br><br>
+          <a href="https://es-es.facebook.com/" title="Facebook">
+            <img src="./Imagenes/facebook.png" alt="Enlace a Facebook" />
+          </a><br><br>
+          <a href="https://www.instagram.com/?hl=es" title="Instagram">
+            <img src="./Imagenes/Instagram.png" alt="Enlace a Instagram" />
+          </a><br><br>
+    
+        
+        </section>
+        
+      </footer>
+      <!-- <div class="app-icon">
         <img src="images/pokeball-icon.png" alt="Pokemon white icon">
       </div>
 
@@ -72,7 +111,7 @@
       </div>
 
     </section>
-  </main>
+  </main> -->
 </body>
     <script src="./scripts/Database.js"></script>
     <script src="./scripts/Login.js"></script>
@@ -99,70 +138,4 @@
 <body>
   <header>
     
-    <nav> <!-- BARRA DE NAVEGACIÓN -->
-        <div class="nav-container">
-        <!-- EL BOTÓN DE INICIO -->
-        <a href="index.html"><img src="images/pokemon_logo.png" alt="Logo" class="navbar-brand"></a>
-        <div>
-          <div class="burger-menu-icon" >
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </div>
-      <ul class="nav-menu hide-menu" id="nav-menu">
-        <!-- LOS BOTONES DE NAVEGACIÓN -->
-        <li><a href="dashboard.html">Dashboard</a></li>
-        <li><a href="signup.html">Sign Up</a></li>
-        <li><a href="login.html">Login</a></li>
-      </ul>
-    </nav>
-
-    <section class="header-section">
-      <div class="header-bg"></div>
-      <div class="header-text">
-        <h1>Pokémon</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br></p>
-      </div>
-    </section>
-  </header>
-
-  <main>
-
-    <section class="app-info">
-      <div class="app-description">
-
-        <h2>Pokémon GO</h2>
-
-        <article>
-          <h4>Lorem Ipsum</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </article>
-
-        <article>
-          <h4>Lorem Ipsum</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </article>
-
-        <article>
-          <h4>Lorem Ipsum</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </article>
-
-      </div>
-
-      <div class="app-icon">
-        <img src="images/pokeball-icon.png" alt="Pokemon white icon">
-      </div>
-
-      <div class="app-image">
-        <img src="images/pokemon-go.jpg" alt="Pokemon Go app">
-      </div>
-
-    </section>
-  </main>
-</body>
-
-</html>  
+   

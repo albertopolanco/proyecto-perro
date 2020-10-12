@@ -11,8 +11,8 @@
     display: flex;
     width: 100%;
     top: 0%;
-    background-color: red;
-    padding: 8px 40px;
+    background-color:  black;
+    padding: 8px 20px;
     justify-content: flex-start;
     align-items: center;
     z-index: 1;
@@ -20,7 +20,7 @@
 }
 
 .logo {
-    width: 50px;
+    width: 60px;
     height: auto;
     margin-right: auto;
 
@@ -28,8 +28,9 @@
 
 .navBar>ul {
     list-style: none;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-size: 1.5rem;
+    
 }
 
 .navBar li{
@@ -39,33 +40,194 @@
  
    
 }
+/*section hom-info*/
 
-.imagenPrincipal {
-    width: 100%;
-    height: 100vh;
-    background: url(../Imagenes/PHOTO-2020-08-05-10-09-24.jpg) no-repeat 50% 50%;
-    background-size: cover;
+.home-info {
+    background-color: #4CDB2C ;
+ }
+
  
 
+ 
+ .app-info h2 {
+     color:#fff;
+     font-size: 30px;
+     display: inline;
+     border-bottom: 3px solid var(--white-color);
+ }
+ 
+ .app-info h4{
+     font-size: 28px;
+ }
+/* seccion main*/
+
+.container{
+    display: flex;
+    justify-content: center;
 }
 
-.imagenSection>h1 {
-    color: #fff;
-    font-size: 85px;
+
+.app-info{
+    background-color: #4CDB2C;
+    color: var(--white-color);
+    padding: 50px;
+    position: relative;
+}
+
+.app-info > .app-description, .app-info > .app-image {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+.app-info > .app-description > article:first-of-type{
+    margin-top: 50px;
+}
+
+.app-info > .app-icon{
     position: absolute;
-    left: 40%;
-    top:30%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    top:50%;
 }
+
+.app-info > .app-icon > img {
+    max-width: 100px;
+}
+
+.app-info > .app-image{
+    text-align: right;
+}
+
+.app-info > .app-image > img{
+    max-width: 70%;
+}
+
+@media (max-width: 768px) {
+
+    .about-items, .app-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-items > .about-item, .app-info > .app-description, .app-info > .app-image {
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .app-info > .app-description p{
+        width:100%;
+    }
+
+    .app-info > .app-icon{
+        position: inherit;
+        transform:none;
+        left: auto;
+        top:auto;
+    }
+
+    .app-info > .app-image{
+        display: none;
+    }
+}
+
+  /* seccion FAQ*/
+
+  .article-faq {
+    margin-top: 20px;
+    margin-top: 40px;
+}
+
+.article-li {
+    font-size: 1.5rem;
+}
+
+
+.article-p {
+    font-size: 15px;
+    margin-top: 10px;  
+
+}
+
+/*section footer*/
+
+.background-footer {
+    background: rgb(253, 143, 18);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    
+  }
+
+  .footer h5 {
+    /* text-decoration: underline wavy black; */
+  }
+
+  .footer a {
+    color: rgb(67, 163, 230);
+    /* text-decoration: none;
+    text-align: center; */
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  /* .footer-img {
+      flex-direction: row;
+      justify-content: space-around;
+  } */
+
+   /* SIGNUP PAGE & LOGIN PAGE */
  
+ .signup, .login{
+    margin-top: 85px;
+    text-align: center;
+}
+
+.form-wrapper{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-wrapper > form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+
+.message-container{
+    width: 100%;
+    max-width: 800px;
+}
+
+
+.message-container p{
+    background-color: #4CDB2C;
+    padding: 20px;
+    margin: 10px 0;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #4CDB2C;
+}
+
+.message-container p.correct-message {
+    background-color: rgb(47, 164, 93);
+    box-shadow: 0 0 10px #dbf1c1;
+}
 
 
 
- * --- RESET --- */
 
-
-
-
+ /* --- RESET --- */
 
 
  *,
@@ -98,10 +260,7 @@
      padding: 30px;
  }
  
- .container{
-     display: flex;
-     justify-content: center;
- }
+
  
  a{
      text-decoration: none;
@@ -120,7 +279,7 @@
  h2{
      color: var(--text-color);
      font-size: 30px;
-     border-bottom: 3px solid var(--red-color);
+     border-bottom: 3px solid black;
      display: inline;
      text-transform: uppercase;
      letter-spacing: 6px;
@@ -139,7 +298,7 @@
      margin: 10px;
      height: 40px;
      border: none;
-     border-bottom: solid 2px var(--red-color);
+     border-bottom: solid 2px #4CDB2C;
      text-align: center;
  }
  
@@ -154,7 +313,7 @@
      background-color: black;
      color: white;
      border: none;
-     box-shadow: 3px 3px 0px var(--red-color);
+     box-shadow: 3px 3px 0px #4CDB2C;
      
  }
  
@@ -168,7 +327,7 @@
  
  /* --- NAV --- */
  
- nav{
+ /* nav{
      position: fixed;
      background-color: var(--white-color);
      color: var(--text-color);
@@ -209,13 +368,13 @@
  
  .nav-menu > li > .selected{
      color: var(--red-color);
- }
+ } */
  
  @media (max-width: 768px){
      nav{
          display: block;
      }
- 
+/*  
      .nav-container{
          display: flex;
          justify-content: space-between;
@@ -250,11 +409,11 @@
      .hide-menu{
          display: none;
      }
- }
+ } */
  
  /* --- HEADER --- */
  
- .header-section{
+ /* .header-section{
      background: url(../images/pokemon-bg.jpg) no-repeat center center /cover;
      height:100vh;
      color: var(--white-color);
@@ -277,7 +436,7 @@
  
  .header-text > p{
      font-size: 26px;
- }
+ } */
  
  @media (max-width: 768px) {
      .header-text{
@@ -288,7 +447,7 @@
  /* --- HOMEPAGE --- */
  
  /*Section About*/
- .about{
+ /* .about{
      padding: 30px;
      text-align: center;
  }
@@ -311,138 +470,26 @@
  .about-item > p {
      color: var(--text-color);
      font-size: 24px;
- }
+ } */
  
  /*Section app info*/
+
  
- .app-info{
-     background-color: var(--red-color);
-     color: var(--white-color);
-     padding: 50px;
-     position: relative;
- }
- 
- .app-info > .app-description, .app-info > .app-image {
-     display: inline-block;
-     width: 49%;
-     vertical-align: top;
- }
- 
- .app-info h2 {
-     color:#fff;
-     font-size: 30px;
-     display: inline;
-     border-bottom: 3px solid var(--white-color);
- }
- 
- .app-info h4{
-     font-size: 28px;
- }
- 
- .app-info p{
-     font-size: 22px;
+ /* .app-info p{
+     font-size: 15px;
      margin: 35px 0;
      line-height: 1.6;
      width: 70%;
  }
- 
- .app-info > .app-description > article:first-of-type{
-     margin-top: 50px;
- }
- 
- .app-info > .app-icon{
-     position: absolute;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     top:50%;
- }
- 
- .app-info > .app-icon > img {
-     max-width: 100px;
- }
- 
- .app-info > .app-image{
-     text-align: right;
- }
- 
- .app-info > .app-image > img{
-     max-width: 70%;
- }
- 
- @media (max-width: 768px) {
- 
-     .about-items, .app-info{
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-     }
- 
-     .about-items > .about-item, .app-info > .app-description, .app-info > .app-image {
-         width: 90%;
-         margin-bottom: 40px;
-     }
- 
-     .app-info > .app-description p{
-         width:100%;
-     }
- 
-     .app-info > .app-icon{
-         position: inherit;
-         transform:none;
-         left: auto;
-         top:auto;
-     }
- 
-     .app-info > .app-image{
-         display: none;
-     }
- }
- 
- /* SIGNUP PAGE & LOGIN PAGE */
- 
- .signup, .login{
-     margin-top: 85px;
-     text-align: center;
- }
- 
- .form-wrapper{
-     padding: 20px;
-     display: flex;
-     justify-content: center;
-     flex-direction: column;
-     align-items: center;
- }
- 
- .form-wrapper > form{
-     display: flex;
-     flex-direction: column;
-     width: 100%;
-     max-width: 600px;
- }
- 
- .message-container{
-     width: 100%;
-     max-width: 800px;
- }
+  */
+
  
  
- .message-container p{
-     background-color: var(--red-color);
-     padding: 20px;
-     margin: 10px 0;
-     color: white;
-     border-radius: 5px;
-     box-shadow: 0 0 10px #feb1b1;
- }
- 
- .message-container p.correct-message {
-     background-color: rgb(47, 164, 93);
-     box-shadow: 0 0 10px #dbf1c1;
- }
+
  
  /* POKEDEX PAGE */
  
- .header-pokedex{
+ /* .header-pokedex{
      background: url(../images/fb24a57d5d82b2fa23c3c3878091530d.jpg) no-repeat center top /cover;
      height:60vh;
  }
@@ -494,11 +541,11 @@
          width: 100%
      }
  }
- 
+  */
  
  /* --- FAQS PAGE --- */
  
- 
+/*  
  .header-faqs{
      background: url(../images/Quagsire2_original_original.jpg) no-repeat center top /cover;
      height:60vh;
@@ -508,14 +555,14 @@
      font-size:35px;
  }
  
- 
+  */
  /*
  CSS para FAQ's aquí!
  */
  
  /* section FAQ's*/
  
- .faqs{
+ /* .faqs{
      width: 100%;
      max-width: 900px;
      margin: 0 auto;
@@ -535,7 +582,7 @@
  
  .faq-heading > h4 {
      width: 85%; /*para que no corte a la flecha*/
- }
+ /* }
  
  .faq-heading > .faq-arrow{
      width: 10px;
@@ -564,14 +611,13 @@
  
  
  /* for animate faqs dropdown */
- 
- 
- .faqs > .faq > .faq-main{ /*juntar con la propiedad de arriba */
+/* 
+ .faqs > .faq > .faq-main{ /*juntar con la propiedad de arriba 
      padding: 0 20px;
      height: 0;
      opacity: 0;
      transition: all ease 0.8s;
-     overflow: hidden; /* con esta propiedad no molesta para clicar el resto de faqs */
+     overflow: hidden; /* con esta propiedad no molesta para clicar el resto de faqs 
  }
  
  .faqs > .toggle-faq-on > .faq-main{
@@ -592,4 +638,4 @@
  .faqs > .toggle-faq-on > .faq-heading > .faq-arrow {
      transform: rotate(225deg);
      transition: all ease 0.6s;
- }
+ }    */
