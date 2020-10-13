@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 class Database {
   // recuperar los usuarios - el array

@@ -4,7 +4,7 @@
 
 
 class Login {
-    constructor(){
+    constructor() {
         this.emailInput = document.querySelector("#email");
         this.passwordInput = document.querySelector("#password");
         this.loginButton = document.querySelector("#login-button");
@@ -12,52 +12,57 @@ class Login {
 
     }
 
-
+        // Gestionar el envio de los datos (evento"submit")
         submit = (event) => {
             event.preventDefault();
 
-            const usersDB =db.getAllUsers();
+            const usersDB = db.getAllUsers();
 
             const email = this.emailInput.value;
 
             const password = this.passwordInput.value;
 
 
-
-            const user = usersDB.find( user0 => {
-                if(user0.email === email && user0.password ===password){
+            // Intentar encontrar el usuario
+            const user = usersDB.find( (userObj) => {
+                if(userObj.email === email && userObj.password === password){
                     return true;
                 }
 
-                this.showMessage(user);
+               
             })
 
-
+            this.showMessage(user);
         }
 
-
+        // mostrar el mensaje de error o mensaje de exito
         showMessage = (user) => {
+            // eliminar el mensaje previo
             this.messageContainer.innerHTML = '';
 
             const message = document.createElement('p');
 
-            if(user){
-                message.classList.add("correct-message");
+            if (user) {
+                //si el usuario inicia la sesion con exito
+                //agrega la clase para cambiar el color y sobrescribir el estilo anterior
                 message.innerHTML = `Hola, ${user.email}`;
-            }else {
+                message.classList.add("correct-message");
+                }
+                else {
+                    //si el inicio de sesion no se a realizado correctamente
                 message.innerHTML = "El email y/o password es incorrecto";
             }
 
 
             this.messageContainer.appendChild(message);
 
-            if(user) this.redirect();
+            if (user) this.redirect();
 
 
         }
 
         redirect = () => {
-            setTimeout (() => location.assign('dashboard.html'), 2000)
+            setTimeout( () => location.assign('dashboard.html'), 2000);
         }
 
 

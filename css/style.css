@@ -4,19 +4,42 @@
     padding: 0;
 
 } 
+// Desde tablet horizontal
+@media (min-width: 992px) {
+    color: green;
+}
+// Desde PC
+@media (min-width: 1200px) {
+    color: blue;
+}
 
+.carrusel-img {
+    display: flex;
+    align-content: center;
+    width: 80%;
+    margin: 0px auto;
+    /* padding: 35px; */
+ /* padding-top: 110px; */
+ 
+}
+
+/* .tamaño-carrusel {
+    height: 80vh;
+} */
 /* header y primer section*/
+
+
  .navBar {
     position: fixed;
     display: flex;
     width: 100%;
     top: 0%;
-    background-color:  black;
+    background-color:  #05486e;
     padding: 8px 20px;
     justify-content: flex-start;
     align-items: center;
     z-index: 1;
-
+    
 }
 
 .logo {
@@ -36,72 +59,36 @@
 .navBar li{
     display: inline-flex;
     padding: 0px 10px;
-    
- 
-   
 }
+
+
+
 /*section hom-info*/
 
 .home-info {
-    background-color: #4CDB2C ;
+    background-color: #a2d5f2 ;
+    text-align: center;
  }
 
  
-
- 
- .app-info h2 {
-     color:#fff;
-     font-size: 30px;
-     display: inline;
-     border-bottom: 3px solid var(--white-color);
- }
- 
- .app-info h4{
-     font-size: 28px;
- }
-/* seccion main*/
-
-.container{
-    display: flex;
-    justify-content: center;
+.home-info>h2 {
+    text-align: center;
 }
 
 
+
 .app-info{
-    background-color: #4CDB2C;
+    background-color: #a2d5f2;
     color: var(--white-color);
     padding: 50px;
     position: relative;
 }
 
-.app-info > .app-description, .app-info > .app-image {
-    display: inline-block;
-    width: 49%;
-    vertical-align: top;
+.home p {
+    font-color: white;
 }
 
-.app-info > .app-description > article:first-of-type{
-    margin-top: 50px;
-}
 
-.app-info > .app-icon{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top:50%;
-}
-
-.app-info > .app-icon > img {
-    max-width: 100px;
-}
-
-.app-info > .app-image{
-    text-align: right;
-}
-
-.app-info > .app-image > img{
-    max-width: 70%;
-}
 
 @media (max-width: 768px) {
 
@@ -111,25 +98,7 @@
         align-items: center;
     }
 
-    .about-items > .about-item, .app-info > .app-description, .app-info > .app-image {
-        width: 90%;
-        margin-bottom: 40px;
-    }
 
-    .app-info > .app-description p{
-        width:100%;
-    }
-
-    .app-info > .app-icon{
-        position: inherit;
-        transform:none;
-        left: auto;
-        top:auto;
-    }
-
-    .app-info > .app-image{
-        display: none;
-    }
 }
 
   /* seccion FAQ*/
@@ -150,42 +119,42 @@
 
 }
 
-/*section footer*/
 
-.background-footer {
-    background: rgb(253, 143, 18);
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
-    
-  }
+@media (max-width: 768px){
+    .pokemon-list > article{
+        width: 100%
+    }
+}
 
-  .footer h5 {
-    /* text-decoration: underline wavy black; */
-  }
 
-  .footer a {
-    color: rgb(67, 163, 230);
-    /* text-decoration: none;
-    text-align: center; */
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  
-  /* .footer-img {
-      flex-direction: row;
-      justify-content: space-around;
-  } */
 
-   /* SIGNUP PAGE & LOGIN PAGE */
+
+/*signup*/
  
- .signup, .login{
-    margin-top: 85px;
+.foto-fondo-sign {
+    width: 100%;
+    height: 87vh;
+    background: url(../Imagenes/pero-durmiendo.jpg) no-repeat 50% 50%;
+    background-size: 100%;
+    margin-top: -100px;
+}
+
+.foto-fondo-log {
+    width: 100%;
+    height: 87vh;
+    background: url(../Imagenes/pose_perros.jpg) no-repeat 50% 50%;
+    background-size: 100%;
+    margin-top: -100px;
+}
+ .signup {
+    margin-top: 15em;
+    text-align: center;
+    margin-left: 60rem;
+   
+}
+
+.login {
+    margin-top: 37em;
     text-align: center;
 }
 
@@ -211,7 +180,7 @@
 
 
 .message-container p{
-    background-color: #4CDB2C;
+    background-color: #4cdb2c;
     padding: 20px;
     margin: 10px 0;
     color: white;
@@ -225,417 +194,183 @@
 }
 
 
+a:hover{
+    color: var(--red-color);
+}
+ 
+body{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: normal;
+}
 
 
- /* --- RESET --- */
+main{
+    padding: 30px;
+}
 
+input {
+    margin: 10px;
+    height: 40px;
+    border: none;
+    border-bottom: solid 2px #4CDB2C;
+    text-align: center;
+}
 
- *,
- *::after,
- *::before{
-     margin: 0;
-     padding: 0;
-     cursor: url('../images/gam1282.cur'), auto;	
-     box-sizing: border-box;
- }
+input:focus{
+    border-bottom: solid 2px var(--text-color);
+    outline-color: #ff6541;
+}
 
+button, .button{
+    height: 40px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    box-shadow: 3px 3px 0px #4CDB2C;
+    
+}
 
+button:hover, .button.hover{
+    background-color:#4e4e4e;
+}
 
- 
- :root {
-     --text-color: #1A1A1A;
-     --red-color: #E3350D;
-     --red-color: #ff6541;
-     --white-color: #FFF;
- }
- 
- body{
-     font-family: "Open Sans", sans-serif;
-     font-weight: 400;
-     line-height: normal;
- }
- 
- 
- main{
-     padding: 30px;
- }
- 
-
- 
- a{
-     text-decoration: none;
-     color: var(--text-color);
- }
- 
- a:hover{
-     color: var(--red-color);
- }
- 
- h1{
-     font-size: 70px;
-     margin-bottom: 20px;
- }
- 
- h2{
-     color: var(--text-color);
-     font-size: 30px;
-     border-bottom: 3px solid black;
-     display: inline;
-     text-transform: uppercase;
-     letter-spacing: 6px;
- }
- 
- h3 {
-     color: var(--red-color);
-     font-size: 26px;
- }
- 
- h4{
-     font-size: 22px;
- }
- 
- input {
-     margin: 10px;
-     height: 40px;
-     border: none;
-     border-bottom: solid 2px #4CDB2C;
-     text-align: center;
- }
- 
- input:focus{
-     border-bottom: solid 2px var(--text-color);
-     outline-color: #ff6541;
- }
- 
- button, .button{
-     height: 40px;
-     margin: 10px;
-     background-color: black;
-     color: white;
-     border: none;
-     box-shadow: 3px 3px 0px #4CDB2C;
-     
- }
- 
- button:hover, .button.hover{
-     background-color:#4e4e4e;
- }
- 
- button:disabled, .button:disabled{
-     background-color: grey;
- }
- 
- /* --- NAV --- */
- 
- /* nav{
-     position: fixed;
-     background-color: var(--white-color);
-     color: var(--text-color);
-     width:100%;
-     height: 85px;
-     z-index: 999;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
- }
- 
- nav .navbar-brand{
-     max-width: 160px;
-     padding-left: 20px;
-     float: left;
- }
- 
- .nav-container{
-     height:85px;
-     margin-top: 12px;
- }
- 
- .nav-container div{
-     display: none;
- }
- 
- .nav-menu{
-     padding-right: 10px;
-     float: right;
- }
- 
- .nav-menu > li {
-     list-style: none;
-     margin: 0 10px;
-     font-size: 20px;
-     display: inline-block;
- }
- 
- .nav-menu > li > .selected{
-     color: var(--red-color);
- } */
- 
- @media (max-width: 768px){
-     nav{
-         display: block;
-     }
-/*  
-     .nav-container{
-         display: flex;
-         justify-content: space-between;
-         height: auto;
-         padding-right: 10px;
-     }
- 
-     .nav-container a{
-         padding-bottom: 10px;
-     }
- 
-     .nav-container div{
-         display: block;
-     }
- 
-     .nav-menu{
-         background-color:#fff;
-         padding: 20px;
-         border-top: 1px solid #e2e2e2;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         width: 100%;
-     }
- 
-     
-     .nav-menu > li{
-         padding: 5px;
-     }
- 
-     .hide-menu{
-         display: none;
-     }
- } */
- 
- /* --- HEADER --- */
- 
- /* .header-section{
-     background: url(../images/pokemon-bg.jpg) no-repeat center center /cover;
-     height:100vh;
-     color: var(--white-color);
-     position: relative;
- }
- 
- .header-bg{
-     position: absolute;
-     background-color: rgba(0,0,0,0.6);
-     width: 100%;
-     height: 100%;
- }
- 
- .header-text{
-     position: absolute;
-     left: 50%;
-     top:50%;
-     transform: translate(-50%,  calc(-50% + 43px));
- }
- 
- .header-text > p{
-     font-size: 26px;
- } */
- 
- @media (max-width: 768px) {
-     .header-text{
-         width: 85%;
-     }
- }
- 
- /* --- HOMEPAGE --- */
- 
- /*Section About*/
- /* .about{
-     padding: 30px;
-     text-align: center;
- }
- 
- .about-items{
-     padding: 80px 0;
- }
- 
- .about-item {
-     display: inline-block;
-     vertical-align: top;
-     width: 32%;
- }
- 
- .about-item > img {
-     max-width: 120px;
-     height: 100px;
- }
- 
- .about-item > p {
-     color: var(--text-color);
-     font-size: 24px;
- } */
- 
- /*Section app info*/
-
- 
- /* .app-info p{
-     font-size: 15px;
-     margin: 35px 0;
-     line-height: 1.6;
-     width: 70%;
- }
-  */
-
- 
+button:disabled, .button:disabled{
+    background-color: grey;
+}
  
 
- 
- /* POKEDEX PAGE */
- 
- /* .header-pokedex{
-     background: url(../images/fb24a57d5d82b2fa23c3c3878091530d.jpg) no-repeat center top /cover;
-     height:60vh;
- }
- 
- .pokemon-list{
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-evenly;
-     width: 100%;
-     max-width: 1100px;
- }
- 
- .pokemon-list > article{
-     width: 30%;
-     margin: 1%;
-     background-color: #f3f3f3;
-     border-radius: 10px;
-     padding: 20px;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
- 
- }
- 
- .pokemon-list > article > img{
-     width: 75%;
- }
- 
- .pokemon-list > article > h3{
-     font-size: 20px;
-     text-transform: uppercase;
-     letter-spacing: 3px;
-     color:var(--red-color);
- }
- 
- .pokemon-list > article > div{
-     display: flex;
- }
- .pokemon-list > article > div > .pokemon-type-label{
-     background-color: #4f4f4f;
-     color: #fff;
-     padding: 5px 10px;
-     border-radius: 5px;
-     margin: 10px 4px;
- }
- 
- @media (max-width: 768px){
-     .pokemon-list > article{
-         width: 100%
-     }
- }
-  */
- 
- /* --- FAQS PAGE --- */
- 
-/*  
- .header-faqs{
-     background: url(../images/Quagsire2_original_original.jpg) no-repeat center top /cover;
-     height:60vh;
- }
- 
- .header-faqs h1{
-     font-size:35px;
- }
- 
-  */
- /*
- CSS para FAQ's aquí!
- */
- 
- /* section FAQ's*/
- 
- /* .faqs{
-     width: 100%;
-     max-width: 900px;
-     margin: 0 auto;
- }
- 
- .faq-heading{
-     width: 100%;
-     padding: 15px;
-     margin-top:20px;
-     background-color: var(--red-color);
-     color: #fff;
-     border: 1px solid #e2e2e2;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
- }
- 
- .faq-heading > h4 {
-     width: 85%; /*para que no corte a la flecha*/
- /* }
- 
- .faq-heading > .faq-arrow{
-     width: 10px;
-     height: 10px;
-     box-sizing: border-box;
-     transform: rotate(45deg);
-     transition: all ease 0.6s;   
- }
- 
- .faq-heading > .faq-arrow::before{
-     content: '';
-     width: 100%;
-     height: 100%;
-     border-width: 0 2px 2px 0;
-     border-style: solid;
-     border-color: #fff;
-     transition: .2s ease;
-     display: block;
-     transform-origin: 100% 0;
- }
- 
- .faqs > .faq > .faq-main{
-     border: 1px solid #e2e2e2;
- }
- 
- 
- 
- /* for animate faqs dropdown */
-/* 
- .faqs > .faq > .faq-main{ /*juntar con la propiedad de arriba 
-     padding: 0 20px;
-     height: 0;
-     opacity: 0;
-     transition: all ease 0.8s;
-     overflow: hidden; /* con esta propiedad no molesta para clicar el resto de faqs 
- }
- 
- .faqs > .toggle-faq-on > .faq-main{
-     padding: 20px;
-     height: auto;
-     opacity:1;
-     transition: all ease 0.8s;
- }
- 
- .faqs > .toggle-faq > .faq-main > .faq-text{
-     height: 0;
- }
- 
- .faqs > .toggle-faq-on > .faq-main > .faq-text{
-     height: auto;
- }
- 
- .faqs > .toggle-faq-on > .faq-heading > .faq-arrow {
-     transform: rotate(225deg);
-     transition: all ease 0.6s;
- }    */
+.main2 {
+    margin-top: 500px;
+    display: flex;
+    justify-content: center;
+}
+/* app page*/
+
+
+@media (max-width: 768px){
+.perros-list > article{
+    width: 100%
+}
+
+/* .form-wrapper2{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.form-control{
+    font-size:1.2em;
+}
+  
+  .container-fluid{
+    background:#efefef;
+    margin-top:30px;
+    padding-bottom:30px;
+  }
+  
+  .container-fluid:last-of-type{
+    background:#fff;
+    padding-bottom:30px;
+  }
+  
+  .container, .card-deck{
+    margin-top:30px;
+  }
+  
+}
+
+
+/*section footer*/
+
+
+
+.background-footer {
+    background: white;
+    /* padding-top: 00px; */
+    padding-bottom: 1rem;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 25px; 
+    
+    /* display: flex;
+    flex-direction: column;
+    height: 250px;
+    
+    align-items: space-around;
+    text-align: center;
+    justify-content: space-around; */
+    
+  }
+
+  .footer h5 {
+      /* margin-top: 300px; */
+    font-size: xx-large;
+    text-align: center;
+    justify-content: space-around;
+    
+  }
+
+  .footer {
+    display: flex; 
+   
+    justify-content: space-around; 
+    
+  }
+
+  /* .footer img {
+      justify-content: row;
+      
+      display: inline;
+  } */
+
+
+/* .backgroung api{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.perros-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.perros-list > article{
+    width: 30%;
+    margin: 1%;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.perros-list > article > img{
+    width: 75%;
+}
+
+.perros-list > article > h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color:var(--red-color);
+}
+
+.perros-list > article > div{
+    display: flex;
+}
+.perros-list > article > div > .perros-type-label{
+    background-color: #4f4f4f;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px 4px;
+} */
