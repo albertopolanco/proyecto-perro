@@ -13,7 +13,7 @@ All pages will have a navigation bar with links to the rest of the sections:
 
 - <h3>FAQ:</h3> Here we will have three of the most common questions about dogs.
 
-- <h3>Sign:</h3> up: Here we will have an image and a form to register the page.
+- <h3>Sign up:</h3> up: Here we will have an image and a form to register the page.
 
 - <h3>Login:</h3> There will be an image and a form to log in.
 
