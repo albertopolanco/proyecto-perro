@@ -61,4 +61,4 @@ https://trello.com/b/q2ixxKTr/equipo-guau
 
 <h2>Git</h2>
 
-https://github.com/albertopolanco/proyecto-perro/tree/gh-pages
+https://github.com/albertopolanco/proyecto-perro
