@@ -7,15 +7,15 @@
 
 All pages will have a navigation bar with links to the rest of the sections:
 
-- <h3>Home:</h3> The main page will have a carousel of images, below a brief explanation of how the dog breeds came about and a footer with links to social networks.
+- <h3>Home:</h3> - The main page will have a carousel of images, below a brief explanation of how the dog breeds came about and a footer with links to social networks.
 
-- <h3>App</h3> page: In the App page we will have a selector where we will have all the names of the breeds of dogs and when clicking on one it will return a random image of that breed.
+- <h3>App</h3> - page: In the App page we will have a selector where we will have all the names of the breeds of dogs and when clicking on one it will return a random image of that breed.
 
-- <h3>FAQ:</h3> Here we will have three of the most common questions about dogs.
+- <h3>FAQ:</h3> - Here we will have three of the most common questions about dogs.
 
-- <h3>Sign up:</h3> up: Here we will have an image and a form to register the page.
+- <h3>Sign up:</h3> - Here we will have an image and a form to register the page.
 
-- <h3>Login:</h3> There will be an image and a form to log in.
+- <h3>Login:</h3> - There will be an image and a form to log in.
 
 
 
