@@ -16,16 +16,11 @@
 .carrusel-img {
     display: flex;
     align-content: center;
-    width: 80%;
+    width: 68%;
     margin: 0px auto;
-    /* padding: 35px; */
- /* padding-top: 110px; */
- 
 }
 
-/* .tamaño-carrusel {
-    height: 80vh;
-} */
+
 /* header y primer section*/
 
 
@@ -65,9 +60,15 @@
 
 /*section hom-info*/
 
+.main-index {
+  width: auto;
+  height: auto;
+}
+
 .home-info {
     background-color: #a2d5f2 ;
     text-align: center;
+    margin-bottom: 20px;
  }
 
  
@@ -75,18 +76,6 @@
     text-align: center;
 }
 
-
-
-.app-info{
-    background-color: #a2d5f2;
-    color: var(--white-color);
-    padding: 50px;
-    position: relative;
-}
-
-.home p {
-    font-color: white;
-}
 
 
 
@@ -119,6 +108,12 @@
 
 }
 
+.app-info{
+  background-color: #a2d5f2;
+  color: var(--white-color);
+  padding: 50px;
+  position: relative;
+}
 
 @media (max-width: 768px){
     .pokemon-list > article{
@@ -132,31 +127,42 @@
 /*signup*/
  
 .foto-fondo-sign {
-    width: 100%;
-    height: 87vh;
-    background: url(../Imagenes/pero-durmiendo.jpg) no-repeat 50% 50%;
+    display: flex;
+    align-content: center;
+    margin: 0px auto;
+    width: 85%;
+    height: 73vh;
+    background: url(../Imagenes/perros-trineo.jpg) no-repeat 50% 50%;
     background-size: 100%;
-    margin-top: -100px;
+    margin-top: 100px;
+    
 }
 
 .foto-fondo-log {
-    width: 100%;
-    height: 87vh;
-    background: url(../Imagenes/pose_perros.jpg) no-repeat 50% 50%;
+    display: flex;
+    align-content: center;
+    margin: 0px auto;
+    width: 85%;
+    height: 73vh;
+    background: url(../Imagenes/pose_perros.jpg) no-repeat 20% 20%;
     background-size: 100%;
     margin-top: -100px;
 }
  .signup {
-    margin-top: 15em;
+    margin-top: 3em;
+    margin-bottom: 3em;
     text-align: center;
-    margin-left: 60rem;
+    margin-left: auto;
    
 }
 
 .login {
-    margin-top: 37em;
+    margin-top: 3em;
+    margin-bottom: 6em;
     text-align: center;
+    margin-left: auto;
 }
+
 
 .form-wrapper{
     padding: 20px;
@@ -170,7 +176,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 600px;
+    max-width: 300px;
 }
 
 .message-container{
@@ -213,7 +219,7 @@ input {
     margin: 10px;
     height: 40px;
     border: none;
-    border-bottom: solid 2px #4CDB2C;
+    border-bottom: solid 2px black;
     text-align: center;
 }
 
@@ -242,7 +248,8 @@ button:disabled, .button:disabled{
  
 
 .main2 {
-    margin-top: 500px;
+    margin-top: 100px;
+    margin-bottom: 400px;
     display: flex;
     justify-content: center;
 }
@@ -254,32 +261,13 @@ button:disabled, .button:disabled{
     width: 100%
 }
 
-/* .form-wrapper2{
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-} */
+
 
 .form-control{
     font-size:1.2em;
 }
   
-  .container-fluid{
-    background:#efefef;
-    margin-top:30px;
-    padding-bottom:30px;
-  }
-  
-  .container-fluid:last-of-type{
-    background:#fff;
-    padding-bottom:30px;
-  }
-  
-  .container, .card-deck{
-    margin-top:30px;
-  }
+ 
   
 }
 
@@ -290,24 +278,16 @@ button:disabled, .button:disabled{
 
 .background-footer {
     background: white;
-    /* padding-top: 00px; */
+    width: auto;
+    height: auto;
+    
     padding-bottom: 1rem;
     padding-left: 100px;
     padding-right: 100px;
-    margin-bottom: 25px; 
-    
-    /* display: flex;
-    flex-direction: column;
-    height: 250px;
-    
-    align-items: space-around;
-    text-align: center;
-    justify-content: space-around; */
-    
-  }
+}
 
   .footer h5 {
-      /* margin-top: 300px; */
+      
     font-size: xx-large;
     text-align: center;
     justify-content: space-around;
@@ -321,56 +301,50 @@ button:disabled, .button:disabled{
     
   }
 
-  /* .footer img {
-      justify-content: row;
-      
-      display: inline;
-  } */
+/////////////////////////////////////////////////////////////////////////////////////////
 
-
-/* .backgroung api{
-    margin-top: 50px;
-    text-align: center;
+.header_app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 5px 40px 0;
+}
+.main-perro {
+  margin-top: 50px;
+  text-align: center;
 }
 
-.perros-list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 100%;
-    max-width: 1100px;
-}
 
-.perros-list > article{
-    width: 30%;
-    margin: 1%;
-    background-color: #f3f3f3;
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+img {
+    max-width: 100%;
+    height: auto;
     align-items: center;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  main {
+    height: 100vh;
+    width: 100%;
+  }
+  
 
-}
-
-.perros-list > article > img{
-    width: 75%;
-}
-
-.perros-list > article > h3{
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color:var(--red-color);
-}
-
-.perros-list > article > div{
-    display: flex;
-}
-.perros-list > article > div > .perros-type-label{
-    background-color: #4f4f4f;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 10px 4px;
-} */
+  main .img-container .dog-img {
+    display: none;
+    width: 80%;
+    margin: 1em auto;
+  }
+  
+  main .img-container .show {
+    display: block;
+  }
+  
+  
+  

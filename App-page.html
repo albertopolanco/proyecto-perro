@@ -15,7 +15,7 @@
 
 
 <body>
-  <header>
+  <header class="header_app">
     <nav class="navBar">  
       <img class="logo" src="./Imagenes/logoperro.jpg" alt="logo perro"/>
         <ul class="navBar-ul">
@@ -26,23 +26,32 @@
         </ul>
       </nav>   
   </header>
-      <section>
       
-      </section>
 
-<main class="main2">
-
-  <div id="search_bar">
-    <form id="formulario">
-      <input type="text" id="search_input" placeholder="Introduce la raza...">
-    </form>
-  </div>
-  <div id="facet_results"></div>
-  <div id="search_results"></div>
-  
-</main>
-<footer>
-  <section class="background-footer">
+      <body>
+        <main class="main-perro">
+          <div class="container_header">
+            <header>
+              <h1>Lista de razas</h1>
+              <select class="breeds"></select>
+            </header>
+          </div>
+          <div class="img-container">
+            <div class="container">
+              <div class="spinner">
+              
+              </div>
+              <img
+                src="http://placecorgi.com/260/180"
+                class="dog-img show"
+                alt="friendly and intimate - man's best friend"
+              />
+            </div>
+          </div>
+        </main>
+      </body>
+<!-- <footer>
+  <section class=".background-footer-app">
     <div class="footer h5">
     <h5>Follow Us</h5>
   </div>
@@ -60,7 +69,7 @@
   
   </section>
   
-</footer>
+</footer> -->
 <script src="scripts/perroApiService.js"></script>
 </body>
 
