@@ -49,3 +49,20 @@ All pages will have a navigation bar with links to the rest of the sections:
     
     · Imagenes/
     
+
+
+
+
+
+    <h1>Links</h1>
+
+
+
+    <h2>trello</h2>
+
+    https://trello.com/b/q2ixxKTr/equipo-guau
+
+
+    <h2>Git</h2>
+
+    https://github.com/albertopolanco/proyecto-perro/tree/gh-pages

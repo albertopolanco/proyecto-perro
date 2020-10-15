@@ -3,7 +3,7 @@ const BREEDS_URL = 'https://dog.ceo/api/breeds/list/all';//define una propiedad 
 const select = document.querySelector('.breeds');//define una propiedad con el elemento con la clase 'breeds' del DOM.
 
 fetch(BREEDS_URL)//hace una llamada a la api declada con BREEDS_URL
-  .then(res => {//cuando acabes dehacer la llamada me devuelves res.json
+  .then(res => {//cuando acabes de hacer la llamada me devuelves res.json
     return res.json();
   })
   .then(data => {//cuando me es devuelto el resultado de la api hazme esto
