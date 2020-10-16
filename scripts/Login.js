@@ -62,7 +62,7 @@ class Login {
         }
 
         redirect = () => {
-            setTimeout( () => location.assign('dashboard.html'), 2000);
+            setTimeout( () => location.assign('App-page.html'), 2000);
         }
 
 
